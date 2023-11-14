@@ -1,11 +1,13 @@
-import { UseEffectEx } from "./components/UseEffectEx";
-import { ExceptionEx } from "./components/ExceptionEx";
+/* import { UseEffectEx } from "./components/UseEffectEx";
+import { ExceptionEx } from "./components/ExceptionEx"; */
+import { TryCatchEx } from "./components/TryCatchEx";
 
 function App() {
   return (
     <div>APP
       {/* <UseEffectEx/> */}
-      <ExceptionEx/>
+      {/* <ExceptionEx/> */}
+      <TryCatchEx/>
    </div>
       
   );

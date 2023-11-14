@@ -17,7 +17,6 @@ conservative mouvement --- use useEffect
 import { useEffect } from "react";
 
 
-jsx 
 
   
     /* useEffect(() => {

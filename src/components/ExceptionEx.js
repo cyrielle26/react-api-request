@@ -9,6 +9,12 @@ export const ExceptionEx = () => {
         console.log("exception를 유모를 따지 않고 get activate anyway")
     }
 
+    //output console
+    // error
+    //exception를 유모를 따지 않고 get activate anyway
+    //error
+    //exception를 유모를 따지 않고 get activate anyway
+
 
     return <div>
          exception

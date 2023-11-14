@@ -1,21 +1,86 @@
-javascript, python, ... language
+TRY...CATCH
 
-Exception (error)
 
-2 types of errors:
+1] Definition
 
+-javascript, python, ... language
+-The try...catch statement marks a block of statements to try,
+ and specifies one or more responses should an exception be thrown.
+ If an exception is thrown, the try...catch statement catches it.
+
+
+2] types of error 
 1] runtime error
 => error when running 
 
 2] syntax error
 => error before running
+=> also called exception
 
+3]Logical Errors
+=>These errors are not the result of a syntax or runtime error.
+Instead, they occur when you make a mistake in the logic that drives your script
+and you do not get the result as expected.
+
+3] types of exceptions:
+
+https://developer.mozilla.org/en-US/docs/Web/API/DOMException
+
+A] The DOMException interface represents an abnormal event 
+(called an exception) that occurs as a result of calling
+a method or accessing a property of a web API. 
+This is how error conditions are described in web APIs.
+
+Each exception has a name, which is a short "PascalCase"-style string 
+identifying the error or abnormal condition.
+ex : IndexSizeError, HierarchyRequestError, WrongDocumentError
+
+B] ECMAScript exceptions
+
+4] Exception Handling === try...catch statement
+
+
+jsx
 
  try {
 
     } catch (error) {
-        //when an exception case occur ----catch단위 get activate
-        // error 매대변수로 let you know wich error is the cause
+        //when an exception case occur ----catch get activate
+        // error parameter let you know wich error is the cause
     }finally {
-        
+        //execute regardless of whether an exception was thrown or caught
     }
+
+
+try { 
+  //The statements to be executed.
+ =>  tryStatements
+} catch (exceptionVar) {
+              |
+  //exceptionVar optional :
+  //An optional identifier or pattern to hold the caught exception
+  // for the associated catch block. If the catch block does not use the exception's value,
+  // you can omit the exceptionVar and its surrounding parentheses.
+
+  //Statement that is executed if an exception is thrown in the try block.
+=> catchStatements
+} finally {
+  //Statements that are executed before control flow exits the try...catch...finally construct. 
+  //These statements execute regardless of whether an exception was thrown or caught.
+
+  finallyStatements
+}
+
+
+
+
+try {  
+   // Code to run  
+   [break;]  
+} catch ( e ) {  
+   // Code to run if an exception occurs
+   [break;]  
+}[ finally {  
+   // Code that is always executed regardless of  
+   // an exception occurring  
+}]  
