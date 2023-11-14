@@ -1,0 +1,33 @@
+useEffect
+
+https://react.dev/reference/react/useEffect
+
+useEffect is a React Hook that lets you synchronize a component with an external system.
+
+//mount : first rendoring
+//update: re rendoring
+//unmount : 화면에서 사라질때
+
+App -- rendoring + rerendoring + move to another page
+conservative mouvement --- use useEffect
+
+
+3 type of useEffect
+
+import { useEffect } from "react";
+
+
+jsx 
+
+  
+    /* useEffect(() => {
+        console.log("activate every mount and update");
+    }); */
+
+   /*  useEffect(() => {
+        console.log("activate only on mount ");
+    }, []);
+ */
+    useEffect(() => {
+        console.log("activate only on specific condition : when 'num' value changes");
+    }, [num]);

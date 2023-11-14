@@ -1,0 +1,21 @@
+javascript, python, ... language
+
+Exception (error)
+
+2 types of errors:
+
+1] runtime error
+=> error when running 
+
+2] syntax error
+=> error before running
+
+
+ try {
+
+    } catch (error) {
+        //when an exception case occur ----catch단위 get activate
+        // error 매대변수로 let you know wich error is the cause
+    }finally {
+        
+    }
