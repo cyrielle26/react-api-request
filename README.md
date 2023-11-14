@@ -21,7 +21,19 @@ try {  <br>
 } catch ( e ) {  <br>
    // Code to run if an exception occurs<br>
    [break;]  <br>
-}[ finally {  <br>
-   // Code that is always executed regardless of  <br>
-   // an exception occurring  <br>
-}]  <br>
+} finally {  <br>
+   // Code that is always executed regardless of an exception occurring  <br>
+}  <br>
+
+OR
+
+try {
+        // Code that may throw an exception<br>
+        throw new Error('Something went wrong');<br>
+      } catch (exceptionVar) {<br>
+        // Code to handle the exception<br>
+        console.log('Caught an exception:', exceptionVar.message);<br>
+      } finally {<br>
+        // Code that will always run<br>
+        console.log('This will always execute, whether an exception occurred or not.');<br>
+    }<br>
